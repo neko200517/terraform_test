@@ -12,15 +12,15 @@ variable "emails" {}
 locals {
   user = {
     target = "user"
-    s3_prefix = "a4v9krn8"
+    s3_prefix = ""
   }
   staff = {
     target = "staff"
-    s3_prefix = "m34abzp2"
+    s3_prefix = ""
   }
 
-  myIp = "106.72.132.65/32"
-  
+  myIp = ""
+
   webacl = {
     rules = {
       ip = "ip-restriction-rule"

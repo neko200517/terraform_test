@@ -1,7 +1,7 @@
-project_name = "lib-poc-service-tf-prod"
+project_name = "myapp-prod"
 region = "ap-northeast-1"
 environment = "prod"
-emails = ["LIB_IFCsupport@teijin.co.jp"]
+emails = [""]
 vpc = {
   cidr_block = {
     main       = "20.0.0.0/16"
@@ -12,12 +12,12 @@ vpc = {
   }
 }
 domain = {
-  zone_id = "Z05890042Z6W4UK0O9CHQ"
-  root_domain = "keytecho.com"
-  user_domain = "keytecho.com"
-  staff_domain = "staff.keytecho.com"
-  api_domain = "api.keytecho.com"
+  zone_id = ""
+  root_domain = ""
+  user_domain = ""
+  staff_domain = ""
+  api_domain = ""
 }
 apigateway = {
-  id = "idfanmpl1b"
+  id = ""
 }

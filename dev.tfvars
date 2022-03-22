@@ -1,7 +1,7 @@
-project_name = "test-service-tf-dev"
+project_name = "myapp-dev"
 region = "ap-northeast-1"
 environment = "dev"
-emails = ["j.terayama@infocom-east.co.jp"]
+emails = [""]
 vpc = {
   cidr_block = {
     main       = "10.0.0.0/16"
@@ -12,12 +12,12 @@ vpc = {
   }
 }
 domain = {
-  zone_id = "Z05890042Z6W4UK0O9CHQ"
-  root_domain = "keytecho.com"
-  user_domain = "user-dev.keytecho.com"
-  staff_domain = "staff-dev.keytecho.com"
-  api_domain = "api.keytecho.com"
+  zone_id = ""
+  root_domain = ""
+  user_domain = ""
+  staff_domain = ""
+  api_domain = ""
 }
 apigateway = {
-  id = "idfanmpl1b"
+  id = ""
 }
