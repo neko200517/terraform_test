@@ -40,7 +40,7 @@ resource "aws_wafv2_web_acl" "web_acl_cf" {
       cloudwatch_metrics_enabled = false
       metric_name                = "${var.project_name}-${local.webacl.cf.name}-${local.webacl.rules.size}"
       sampled_requests_enabled   = false
-    }    
+    }
   }
 
   # IP（許可IP以外を制限）
@@ -87,14 +87,14 @@ resource "aws_wafv2_web_acl" "web_acl_cf" {
         }
       }
     }
-  
+
     visibility_config {
       cloudwatch_metrics_enabled = false
       metric_name                = "${var.project_name}-${local.webacl.cf.name}-${local.webacl.rules.geo}"
       sampled_requests_enabled   = false
-    }    
+    }
   }
-  
+
   # レートベースド（5分間にn回アクセスで制限）
   rule {
     name     = local.webacl.rules.rate
@@ -115,7 +115,7 @@ resource "aws_wafv2_web_acl" "web_acl_cf" {
       cloudwatch_metrics_enabled = false
       metric_name                = "${var.project_name}-${local.webacl.cf.name}-${local.webacl.rules.rate}"
       sampled_requests_enabled   = false
-    }    
+    }
   }
 
   # AWS-AWSManagedRulesAmazonIpReputationList
@@ -251,11 +251,7 @@ resource "aws_wafv2_ip_set" "ip_set_cf" {
   provider           = aws.virginia
   ip_address_version = "IPV4"
 
-  addresses = [
-    "113.40.65.102/32",
-    "106.72.132.65/32",
-    "125.102.213.179/32",
-  ]
+  addresses = []
 
   # tags = {}
 }

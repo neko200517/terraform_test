@@ -33,7 +33,7 @@ Lambda と API Gateway は Serverless Framework で構築している。
 
 - WAF
 
-### サーバ
+### サーバー
 
 - EC2
 - RDS
