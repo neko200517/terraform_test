@@ -4,6 +4,9 @@ AWS サーバレス環境の構築。
 以下のサービスが自動的に構築される。
 Lambda と API Gateway は Serverless Framework で構築している。
 
+### システム構成
+![システム構成図](LIB_システム構成図_最新.png)
+
 ### ネットワーク
 
 - VPC
